@@ -36,3 +36,15 @@ buildTypes {
 proguard-android.txt
 
 proguard-rules.pro
+
+
+混淆之后会生成四个文件
+
+mapping.txt: 表示混淆前后代码的对照表，这个文件非常重要。如果你的代码混淆后会产生bug的话，log提示中是混淆后的代码，希望定位到源代码的话就可以根据mapping.txt反推。
+每次发布都要保留它方便该版本出现问题时调出日志进行排查，它可以根据版本号或是发布时间命名来保存或是放进代码版本控制中。
+
+dump.txt: 描述apk内所有class文件的内部结构。
+
+seeds.txt: 列出了没有被混淆的类和成员。
+
+usage.txt: 列出了源代码中被删除在apk中不存在的代码。
