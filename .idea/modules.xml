@@ -4,6 +4,9 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/android-code-guard.iml" filepath="$PROJECT_DIR$/android-code-guard.iml" />
       <module fileurl="file://$PROJECT_DIR$/code-guard/code-guard.iml" filepath="$PROJECT_DIR$/code-guard/code-guard.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo/demo.iml" filepath="$PROJECT_DIR$/demo/demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/vinci.iml" filepath="$PROJECT_DIR$/vinci.iml" />
     </modules>
   </component>
 </project>

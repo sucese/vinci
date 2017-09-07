@@ -2,10 +2,11 @@
 
 buildscript {
     repositories {
+        google()
         jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.2.0-beta1'
+        classpath 'com.android.tools.build:gradle:3.0.0-alpha9'
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
@@ -20,4 +21,24 @@ allprojects {
 
 task clean(type: Delete) {
     delete rootProject.buildDir
+}
+
+ext {
+    version = '1.0.0'
+
+    //android
+    compileSdkVersion = 25
+    buildToolsVersion = "25.0.3"
+    minSdkVersion = 16
+    targetSdkVersion = 25
+    versionCode = 1
+    versionName = "1.0"
+    supportLibraryVersion = "25.3.1"
+
+    //other
+    routerVersion = "1.2.2"
+    reactNativeVersion = "0.43.4"
+
+    rxJavaVerstion = "2.0.5"
+    rxAndroidVerstion = "2.0.1"
 }

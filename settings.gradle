@@ -1,1 +1,1 @@
-include ':code-guard'
+include ':library', ':demo'
