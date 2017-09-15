@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="vinci_circle_menu_button_color_disabled">#ffffff</color>
+    <color name="vinci_circle_menu_center_button_color_normal">#f8717171</color>
+    <color name="vinci_circle_menu_center_button_color_pressed">#F8545454</color>
+    <color name="vinci_circle_menu_center_button_color_opened">#88ffffff</color>
+    <color name="vinci_possible_result_points">#c0ffff00</color>
+    <color name="vinci_result_view">#b0000000</color>
+    <color name="vinci_viewfinder_mask">#60000000</color>
+</resources>

@@ -1,2 +1,32 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.guoxiaoxing.vinci" />
+    package="com.guoxiaoxing.vinci">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application android:label="@string/app_name">
+        <activity
+            android:name=".ui.VinciActivity"
+            android:theme="@style/VinciTheme" />
+        <activity
+            android:name=".widget.zxing.activity.CaptureActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/VinciTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".widget.zxing.activity.JumpActivity"
+            android:theme="@style/VinciTheme" />
+        <service android:name=".service.LogFloatService" />
+        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
+    </application>
+</manifest>

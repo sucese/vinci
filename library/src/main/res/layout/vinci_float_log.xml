@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="30dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="30dp">
+
+    <ScrollView
+        android:id="@+id/vinci_log_view"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@android:color/darker_gray">
+
+        <TextView
+            android:id="@+id/vinci_log_tv_show"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"/>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/vinci_log_btn_clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/vinci_log_view"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="6dp"
+        android:layout_toLeftOf="@+id/vinci_log_btn_close"
+        android:text="清空"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/vinci_log_btn_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/vinci_log_view"
+        android:layout_marginTop="6dp"
+        android:text="关闭"
+        android:textSize="16sp"/>
+</RelativeLayout>
