@@ -7,7 +7,7 @@
 **文章目录**
 
 - 一 原理概览
-- 二 启动路程
+- 二 启动流程
     - 2.1 创建ReactInstanceManager
     - 2.2 创建ReactContext
     - 2.3 加载JS Bundle
