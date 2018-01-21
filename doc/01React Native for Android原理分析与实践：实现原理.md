@@ -198,7 +198,7 @@ public class ReactInstanceManager {
 
 我们再来看第二个问题，ReactContext创建流程序列图如下所示：
 
-<img src="https://github.com/guoxiaoxing/vinci/raw/master/art/react_native_start_flow_structure.png"/>
+<img src="https://github.com/guoxiaoxing/vinci/raw/master/art/react_context_start_sequence.png"/>
 
 可以发现，最终创建ReactContext是createReactContext()方法，我们来看看它的实现。
 
