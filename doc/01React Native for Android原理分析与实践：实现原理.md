@@ -36,7 +36,7 @@
 - C++层：该层主要完成了Java与JavaScript的通信以及执行JavaScript代码两件工作。
 - JavaScript层：该层提供了各种供开发者使用的组件以及一些工具库。
 
->注：JSCore，即JavaScriptCore，JS解析的核心部分，IOS使用的是内置的JavaScriptCore，Androis上使用的是https://webkit.org/家的jsc.so。
+>注：JSCore，即JavaScriptCore，JS解析的核心部分，IOS使用的是内置的JavaScriptCore，Androis上使用的是 https://webkit.org 家的jsc.so。
 
 通过上面的分析，我们理解了React Native的框架结构，除此之外，我们还要理解整套框架里的一些重要角色，如下所示：
 
@@ -168,6 +168,7 @@ public class ReactInstanceManager {
         synchronized (mPackages) {
           PrinterHolder.getPrinter()
               .logMessage(ReactDebugOverlayTags.RN_CORE, "RNCore: Use Split Packages");
+          //添加核心ReactPackage
           mPackages.add(
               new CoreModulesPackage(
                   this,
@@ -907,3 +908,5 @@ RN应用通信桥结构图如下所示：
 #### JS调用Java
 
 <img src="https://github.com/guoxiaoxing/vinci/raw/master/art/react_native_communication_mechanism_js_to_java_flow.png"/>
+
+注：如果想要了解关于通信机制的更多细节，可以去看我的这篇文章[6ReactNative源码篇：通信机制](https://github.com/guoxiaoxing/react-native/blob/master/doc/ReactNative源码篇/6ReactNative源码篇：通信机制.md)。
