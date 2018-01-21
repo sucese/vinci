@@ -26,3 +26,11 @@
 - react：ReactNative源码的主要内容，也是我们分析的主要内容。
 - systrace：system trace
 - yoga：瑜伽？哈哈，并不是，是facebook开源的前端布局引擎
+
+总体来看，整套React Native框架分为三层，如下图所示：
+
+<img src="https://github.com/guoxiaoxing/vinci/raw/master/art/react_native_system_strcuture.png"/>
+
+- Java层：该层主要提供了
+
+>注：JSCore，即JavaScriptCore，JS解析的核心部分，IOS使用的是内置的JavaScriptCore，Androis上使用的是https://webkit.org/家的jsc.so。
