@@ -7,8 +7,8 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.0.0-beta2'
-
+        classpath 'com.android.tools.build:gradle:3.0.1'
+        classpath 'com.novoda:bintray-release:0.7.0'
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }
@@ -25,12 +25,23 @@ allprojects {
     }
 }
 
+allprojects {
+    repositories {
+        google()
+        jcenter()
+    }
+    tasks.withType(Javadoc).all {
+        enabled = false
+    }
+}
+
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
 
 ext {
-    version = '1.0.0'
+    coreVersion = '1.0.0'
+    pluginVersion = '1.0.0'
 
     //android
     compileSdkVersion = 25

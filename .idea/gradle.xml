@@ -9,7 +9,8 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/demo" />
-            <option value="$PROJECT_DIR$/library" />
+            <option value="$PROJECT_DIR$/vinci-core" />
+            <option value="$PROJECT_DIR$/vinci-plugin" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
