@@ -4,6 +4,21 @@
 
 >郭孝星，程序员，吉他手，主要从事Android平台基础架构方面的工作，欢迎交流技术方面的问题，可以去我的[Github](https://github.com/guoxiaoxing)提issue或者发邮件至guoxiaoxingse@163.com与我交流。
 
+**文章目录**
+
+- 一 原理概览
+- 二 启动路程
+    - 2.1 创建ReactInstanceManager
+    - 2.2 创建ReactContext
+    - 2.3 加载JS Bundle
+    - 2.4 绑定ReactContext与ReactRootView
+- 三 渲染原理
+    - 3.1 JavaScript层组件渲染
+    - 3.2 Java层组件渲染
+- 四 通信机制
+    - 4.1 创建注册表
+    - 4.2 创建通信桥
+
 从2016年中开始，我司开始筹措推进React Native在全公司的推广使用，从最基础的基础框架搭建开始，到各种组件库、开发工具的完善，经历了诸多波折，也累积了很多经验。今年的工作也
 马上接近尾声，打算写几篇文章来对这一年多的实践经验做个总结。读者有什么问题或者想要交流的地方，可以去[vinci](https://github.com/guoxiaoxing/vinci)提issue。
 
@@ -57,7 +72,6 @@
 
 ## 二 启动流程
 
-
 我们知道RN的页面也是依托Activity，React Native框架里有一个ReactActivity，它就是我们RN页面的容器。ReactActivity里有个ReactRootView，正如它的名字那样，它就是
 ReactActivity的root View，最终渲染出来的view都会添加到这个ReactRootView上。ReactRootView调用自己的startReactApplication()方法启动了整个RN页面，在启动的过程
 中先去创建页面上下文ReactContext，然后再去加载、执行并将JavaScript映射成Native Widget，最终一个RN页面就显示在了用户面前。
@@ -66,10 +80,12 @@ ReactActivity的root View，最终渲染出来的view都会添加到这个ReactR
 
 <img src="https://github.com/guoxiaoxing/vinci/raw/master/art/react_native_start_flow_structure.png"/>
 
-这个流程看起来有点长，但实际上重要的东西并不多，我们当前只需要重点关注两个问题：
+这个流程看起来有点长，但实际上重要的东西并不多，我们当前只需要重点关注四个问题：
 
 1. ReactInstanceManager是如何被创建的，它在创建的时候都初始化了哪些对象？🤔
 2. RN页面上下文ReactContext在创建的过程中都做了什么，都初始化了哪些对象？🤔
+3. JS Bundle是如何被加载的？🤔
+4. JS入口页面是如何被渲染出来的？🤔
 
 ### 2.1 创建ReactInstanceManager
 
