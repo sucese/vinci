@@ -1,4 +1,4 @@
-# <img src="https://github.com/guoxiaoxing/vinci/raw/master/art/logo.png" alt="Android open source project analysis" width="80" height="80" align="bottom"/> Android open source project analysis
+# <img src="https://github.com/guoxiaoxing/vinci/raw/master/art/logo.png" alt="Android open source project analysis" width="80" height="80" align="bottom"/> Vinci
 
 ## 功能介绍
 
@@ -13,12 +13,28 @@
 
 **原理篇**
 
-- [01Android平台ReactNative框架原理篇：源码初识](https://github.com/guoxiaoxing//blob/master/doc/原理篇/01Android平台ReactNative框架原理篇：源码初识.md)
-- [02Android平台ReactNative框架原理篇：代码调用](https://github.com/guoxiaoxing/vinci/blob/master/doc/原理篇/02Android平台ReactNative框架原理篇：代码调用.md)
-- [03Android平台ReactNative框架原理篇：启动流程](https://github.com/guoxiaoxing/vinci/blob/master/doc/原理篇/03Android平台ReactNative框架原理篇：启动流程.md)
-- [04Android平台ReactNative框架原理篇：渲染原理](https://github.com/guoxiaoxing/vinci/blob/master/doc/原理篇/04Android平台ReactNative框架原理篇：渲染原理.md)
-- [051Android平台ReactNative框架原理篇：线程模型](https://github.com/guoxiaoxing/vinci/blob/master/doc/原理篇/05Android平台ReactNative框架原理篇：线程模型.md)
-- [061Android平台ReactNative框架原理篇：通信机制](https://github.com/guoxiaoxing/vinci/blob/master/doc/原理篇/06Android平台ReactNative框架原理篇：通信机制.md)
+- [Android平台ReactNative框架原理篇：框架概述](https://github.com/guoxiaoxing//blob/master/doc/原理篇/01Android平台ReactNative框架原理篇：框架概述.md)
+- [Android平台ReactNative框架原理篇：代码调用](https://github.com/guoxiaoxing/vinci/blob/master/doc/原理篇/02Android平台ReactNative框架原理篇：代码调用.md)
+- [Android平台ReactNative框架原理篇：启动流程](https://github.com/guoxiaoxing/vinci/blob/master/doc/原理篇/03Android平台ReactNative框架原理篇：启动流程.md)
+- [Android平台ReactNative框架原理篇：渲染原理](https://github.com/guoxiaoxing/vinci/blob/master/doc/原理篇/04Android平台ReactNative框架原理篇：渲染原理.md)
+- [Android平台ReactNative框架原理篇：线程模型](https://github.com/guoxiaoxing/vinci/blob/master/doc/原理篇/05Android平台ReactNative框架原理篇：线程模型.md)
+- [Android平台ReactNative框架原理篇：通信机制](https://github.com/guoxiaoxing/vinci/blob/master/doc/原理篇/06Android平台ReactNative框架原理篇：通信机制.md)
 
 **实践篇**
 
+## 功能介绍
+
+- 原生App集成React Native
+- 预加载、界面秒开
+- 热部署、增量热更新
+- 自定义ReactDegelate，实现Android现有布局添加React Native视图
+
+## 快递开始
+
+更多文档可参见[wiki](https://github.com/guoxiaoxing/vinci/wiki)
+
+## 更新日志
+
+## 贡献代码
+
+## License
