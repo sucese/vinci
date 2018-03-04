@@ -4,16 +4,14 @@
 
 >郭孝星，程序员，吉他手，主要从事Android平台基础架构方面的工作，欢迎交流技术方面的问题，可以去我的[Github](https://github.com/guoxiaoxing)提issue或者发邮件至guoxiaoxingse@163.com与我交流。
 
-更多文章：https://github.com/guoxiaoxing/react-native/blob/master/README.md
+更多文章：https://github.com/guoxiaoxing/vinci
 
->本篇系列文章主要分析ReactNative源码，分析ReactNative的启动流程、渲染原理、通信机制与线程模型等方面内容。
-
-- [1ReactNative源码篇：源码初识](https://github.com/guoxiaoxing/vinci/blob/master/doc/ReactNative源码篇/1ReactNative源码篇：源码初识.md)
-- [2ReactNative源码篇：代码调用](https://github.com/guoxiaoxing/vinci/blob/master/doc/ReactNative源码篇/2ReactNative源码篇：代码调用.md)
-- [3ReactNative源码篇：启动流程](https://github.com/guoxiaoxing/vinci/blob/master/doc/ReactNative源码篇/3ReactNative源码篇：启动流程.md)
-- [4ReactNative源码篇：渲染原理](https://github.com/guoxiaoxing/vinci/blob/master/doc/ReactNative源码篇/4ReactNative源码篇：渲染原理.md)
-- [5ReactNative源码篇：线程模型](https://github.com/guoxiaoxing/vinci/blob/master/doc/ReactNative源码篇/5ReactNative源码篇：线程模型.md)
-- [6ReactNative源码篇：通信机制](https://github.com/guoxiaoxing/vinci/blob/master/doc/ReactNative源码篇/6ReactNative源码篇：通信机制.md)
+- [Android平台ReactNative框架原理篇：框架概述](https://github.com/guoxiaoxing/vinci/blob/master/doc/原理篇/01Android平台ReactNative框架原理篇：框架概述.md)
+- [Android平台ReactNative框架原理篇：代码调用](https://github.com/guoxiaoxing/vinci/blob/master/doc/原理篇/02Android平台ReactNative框架原理篇：代码调用.md)
+- [Android平台ReactNative框架原理篇：启动流程](https://github.com/guoxiaoxing/vinci/blob/master/doc/原理篇/03Android平台ReactNative框架原理篇：启动流程.md)
+- [Android平台ReactNative框架原理篇：渲染原理](https://github.com/guoxiaoxing/vinci/blob/master/doc/原理篇/04Android平台ReactNative框架原理篇：渲染原理.md)
+- [Android平台ReactNative框架原理篇：线程模型](https://github.com/guoxiaoxing/vinci/blob/master/doc/原理篇/05Android平台ReactNative框架原理篇：线程模型.md)
+- [Android平台ReactNative框架原理篇：通信机制](https://github.com/guoxiaoxing/vinci/blob/master/doc/原理篇/06Android平台ReactNative框架原理篇：通信机制.md)
         						
 >通信，指的是RN中Java与JS的通信，即JS中的JSX代码如何转化成Java层真实的View与事件的，以及JavaFile层又是如何调用JS来找出它需要的View与
 事件的。

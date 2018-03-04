@@ -13,7 +13,7 @@
 
 **原理篇**
 
-- [Android平台ReactNative框架原理篇：框架概述](https://github.com/guoxiaoxing//blob/master/doc/原理篇/01Android平台ReactNative框架原理篇：框架概述.md)
+- [Android平台ReactNative框架原理篇：框架概述](https://github.com/guoxiaoxing/vinci/blob/master/doc/原理篇/01Android平台ReactNative框架原理篇：框架概述.md)
 - [Android平台ReactNative框架原理篇：代码调用](https://github.com/guoxiaoxing/vinci/blob/master/doc/原理篇/02Android平台ReactNative框架原理篇：代码调用.md)
 - [Android平台ReactNative框架原理篇：启动流程](https://github.com/guoxiaoxing/vinci/blob/master/doc/原理篇/03Android平台ReactNative框架原理篇：启动流程.md)
 - [Android平台ReactNative框架原理篇：渲染原理](https://github.com/guoxiaoxing/vinci/blob/master/doc/原理篇/04Android平台ReactNative框架原理篇：渲染原理.md)

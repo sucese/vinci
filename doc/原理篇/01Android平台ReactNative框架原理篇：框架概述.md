@@ -4,20 +4,26 @@
 
 >郭孝星，程序员，吉他手，主要从事Android平台基础架构方面的工作，欢迎交流技术方面的问题，可以去我的[Github](https://github.com/guoxiaoxing)提issue或者发邮件至guoxiaoxingse@163.com与我交流。
 
-更多文章：https://github.com/guoxiaoxing/vinciblob/master/README.md
+更多文章：https://github.com/guoxiaoxing/vinci
 
 >本篇系列文章主要分析ReactNative源码，分析ReactNative的启动流程、渲染原理、通信机制与线程模型等方面内容。
 
-- [1ReactNative源码篇：源码初识](https://github.com/guoxiaoxing/vinciblob/master/doc/ReactNative源码篇/1ReactNative源码篇：源码初识.md)
-- [2ReactNative源码篇：代码调用](https://github.com/guoxiaoxing/vinciblob/master/doc/ReactNative源码篇/2ReactNative源码篇：代码调用.md)
-- [3ReactNative源码篇：启动流程](https://github.com/guoxiaoxing/vinciblob/master/doc/ReactNative源码篇/3ReactNative源码篇：启动流程.md)
-- [4ReactNative源码篇：渲染原理](https://github.com/guoxiaoxing/vinciblob/master/doc/ReactNative源码篇/4ReactNative源码篇：渲染原理.md)
-- [5ReactNative源码篇：线程模型](https://github.com/guoxiaoxing/vinciblob/master/doc/ReactNative源码篇/5ReactNative源码篇：线程模型.md)
-- [6ReactNative源码篇：通信机制](https://github.com/guoxiaoxing/vinciblob/master/doc/ReactNative源码篇/6ReactNative源码篇：通信机制.md)
+- [Android平台ReactNative框架原理篇：框架概述](https://github.com/guoxiaoxing/vinci/blob/master/doc/原理篇/01Android平台ReactNative框架原理篇：框架概述.md)
+- [Android平台ReactNative框架原理篇：代码调用](https://github.com/guoxiaoxing/vinci/blob/master/doc/原理篇/02Android平台ReactNative框架原理篇：代码调用.md)
+- [Android平台ReactNative框架原理篇：启动流程](https://github.com/guoxiaoxing/vinci/blob/master/doc/原理篇/03Android平台ReactNative框架原理篇：启动流程.md)
+- [Android平台ReactNative框架原理篇：渲染原理](https://github.com/guoxiaoxing/vinci/blob/master/doc/原理篇/04Android平台ReactNative框架原理篇：渲染原理.md)
+- [Android平台ReactNative框架原理篇：线程模型](https://github.com/guoxiaoxing/vinci/blob/master/doc/原理篇/05Android平台ReactNative框架原理篇：线程模型.md)
+- [Android平台ReactNative框架原理篇：通信机制](https://github.com/guoxiaoxing/vinci/blob/master/doc/原理篇/06Android平台ReactNative框架原理篇：通信机制.md)
 
 源码地址：https://github.com/facebook/react-native
 
 源码版本：[![Build Status](https://travis-ci.org/facebook/react-native.svg?branch=master)](https://travis-ci.org/facebook/react-native) [![Circle CI](https://circleci.com/gh/facebook/react-native.svg?style=shield)](https://circleci.com/gh/facebook/react-native) [![npm version](https://badge.fury.io/js/react-native.svg)](https://badge.fury.io/js/react-native)
+
+从2016年中开始，我司开始筹措推进React Native在全公司的推广使用，从最基础的基础框架搭建开始，到各种组件库、开发工具的完善，经历了诸多波折，也累积了很多经验。今年的工作也
+马上接近尾声，打算写几篇文章来对这一年多的实践经验做个总结。读者有什么问题或者想要交流的地方，可以去[vinci](https://github.com/guoxiaoxing/vinci)提issue。
+
+预先善其事，必先利其器。开篇第一篇文章我们还是从React Native实现原理讲起，事实上原理分析的文章之前就有写过，但是鉴于最新的版本0.52.0源码有
+不少的改动，我们就再重新温习一下，这样过渡到后续的内容，才更加容易理解。
 
 本篇文章是《ReactNative源码篇》的第一篇文章，刚开始，我们先不对源码做深入的分析，我们先要对源码的结构和ReactNative的框架有个大致的印象，
 由此便引出了本篇文章需要讨论的两个问题：
