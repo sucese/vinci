@@ -4,8 +4,6 @@
 
 >郭孝星，程序员，吉他手，主要从事Android平台基础架构方面的工作，欢迎交流技术方面的问题，可以去我的[Github](https://github.com/guoxiaoxing)提issue或者发邮件至guoxiaoxingse@163.com与我交流。
 
-更多文章：https://github.com/guoxiaoxing/react-native/blob/master/README.md
-
 **文章目录**
 
 - 一 应用的初始化流程
@@ -21,7 +19,6 @@
 - [Android平台ReactNative框架原理篇：渲染原理](https://github.com/guoxiaoxing/vinci/blob/master/doc/原理篇/04Android平台ReactNative框架原理篇：渲染原理.md)
 - [Android平台ReactNative框架原理篇：线程模型](https://github.com/guoxiaoxing/vinci/blob/master/doc/原理篇/05Android平台ReactNative框架原理篇：线程模型.md)
 - [Android平台ReactNative框架原理篇：通信机制](https://github.com/guoxiaoxing/vinci/blob/master/doc/原理篇/06Android平台ReactNative框架原理篇：通信机制.md)
-
   						
 ## 一 应用初始化流程
 
@@ -203,7 +200,7 @@ public abstract class ReactNativeHost {
 
 RN应用的启动流程图如下所示：
 
-<img src="https://github.com/guoxiaoxing/react-native/raw/master/art/react_native_start_flow_structure.png"/>
+<img src="https://github.com/guoxiaoxing/vinci/raw/master/art/react_native_start_flow_structure.png"/>
 
 详细流程：
 
@@ -224,7 +221,7 @@ ReactRootView加载进来，并调用RN应用的JS入口APPRegistry来启动应�
 6 JS层找到已经注册的对应的启动组件，执行renderApplication()来渲染整个应用。
 ```
 
-<img src="https://github.com/guoxiaoxing/react-native/raw/master/art/next_java.png"/>
+<img src="https://github.com/guoxiaoxing/vinci/raw/master/art/next_java.png"/>
 
 好，我们先从ReactActivity入手。
 
@@ -232,7 +229,7 @@ ReactActivity继承于Activity，并实现了它的生命周期方法。ReactAct
 
 如下所示：
 
-<img src="https://github.com/guoxiaoxing/react-native/raw/master/art/ClusterCallButterfly-react-ReactActivity.png"/>
+<img src="https://github.com/guoxiaoxing/vinci/raw/master/art/ClusterCallButterfly-react-ReactActivity.png"/>
 
 所以我们主要来关注ReactActivityDelegate的实现。我们先来看看ReactActivityDelegate的onCreate()方法。
 
@@ -801,7 +798,7 @@ public class CatalystInstanceImpl {
 
 CatalystInstanceImpl.java最终还是调用C++层的CatalystInstanceImpl.cpp去加载JS Bundle，我们去C++层看一下实现。
 
-<img src="https://github.com/guoxiaoxing/react-native/raw/master/art/next_c++.png"/>
+<img src="https://github.com/guoxiaoxing/vinci/raw/master/art/next_c++.png"/>
 
 可以看出该方法最终调用Native方法jniLoadScriptFromAssets去加载JS Bundle，该方法的实现如下所示：
 
@@ -1060,7 +1057,7 @@ ReactContextInitAsyncTask的后台任务执行完成，进入到异步任务的o
 
 JS Bundle加载并解析完成后，ReactContextInitAsyncTask的后台任务完成，进入onPostExecute()方法，我们继续跟进它的实现。
 
-<img src="https://github.com/guoxiaoxing/react-native/raw/master/art/source/next_java.png"/>
+<img src="https://github.com/guoxiaoxing/vinci/raw/master/art/source/next_java.png"/>
 
 当ReactContext被创建以后，变回继续执行ReactContextInitAsyncTask.onPostExecute()方法。
 
@@ -1175,7 +1172,7 @@ public class ReactInstanceManager {
 
 ```
 
-<img src="https://github.com/guoxiaoxing/react-native/raw/master/art/next_js.png"/>
+<img src="https://github.com/guoxiaoxing/vinci/raw/master/art/next_js.png"/>
 
 ReactInstanceManager.attachMeasuredRootViewToInstance()最终进入了RN应用的启动流程入口，调用catalystInstance.getJSModule(AppRegistry.class).runApplication(jsAppModuleName, appParams)，
 AppRegistry.class是JS层暴露给Java层的接口方法。它的真正实现在AppRegistry.js里，AppRegistry.js是运行所有RN应用的JS层入口，我们来看看它的实现：
