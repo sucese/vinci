@@ -4,10 +4,13 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/android-code-guard.iml" filepath="$PROJECT_DIR$/android-code-guard.iml" />
       <module fileurl="file://$PROJECT_DIR$/code-guard/code-guard.iml" filepath="$PROJECT_DIR$/code-guard/code-guard.iml" />
-      <module fileurl="file://$PROJECT_DIR$/demo/demo.iml" filepath="$PROJECT_DIR$/demo/demo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/vinci.iml" filepath="$PROJECT_DIR$/vinci.iml" />
-      <module fileurl="file://$PROJECT_DIR$/vinci-core/library.iml" filepath="$PROJECT_DIR$/vinci-core/library.iml" />
       <module fileurl="file://$PROJECT_DIR$/vinci-plugin/cuckoo-plugin.iml" filepath="$PROJECT_DIR$/vinci-plugin/cuckoo-plugin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo/demo.iml" filepath="$PROJECT_DIR$/demo/demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo/demo.iml" filepath="$PROJECT_DIR$/demo/demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/vinci-core/library.iml" filepath="$PROJECT_DIR$/vinci-core/library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/vinci.iml" filepath="$PROJECT_DIR$/vinci.iml" />
+      <module fileurl="file://$PROJECT_DIR$/vinci-core/vinci-core.iml" filepath="$PROJECT_DIR$/vinci-core/vinci-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/vinci-plugin/vinci-plugin.iml" filepath="$PROJECT_DIR$/vinci-plugin/vinci-plugin.iml" />
     </modules>
   </component>
 </project>
