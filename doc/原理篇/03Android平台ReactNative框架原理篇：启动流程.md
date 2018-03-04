@@ -1,4 +1,4 @@
-# ReactNative源码篇：启动流程
+# Android平台ReactNative框架原理篇：启动流程
 
 **关于作者**
 

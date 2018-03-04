@@ -1,4 +1,4 @@
-# ReactNative源码篇：渲染原理
+# Android平台ReactNative框架原理篇：渲染原理
 
 **关于作者**
 

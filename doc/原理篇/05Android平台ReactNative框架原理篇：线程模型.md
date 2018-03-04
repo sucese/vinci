@@ -1,4 +1,4 @@
-# ReactNative源码篇：线程模型
+# Android平台ReactNative框架原理篇：线程模型
 
 **关于作者**
 

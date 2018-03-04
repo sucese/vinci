@@ -1,4 +1,4 @@
-# ReactNative源码篇：通信机制
+# Android平台ReactNative框架原理篇：通信机制
 
 **关于作者**
 
