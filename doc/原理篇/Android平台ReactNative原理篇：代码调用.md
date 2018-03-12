@@ -16,13 +16,6 @@
 
 >本篇系列文章主要分析ReactNative源码，分析ReactNative的启动流程、渲染原理、通信机制与线程模型等方面内容。
 
-- [Android平台ReactNative框架原理篇：框架概述](https://github.com/guoxiaoxing/vinci/blob/master/doc/原理篇/01Android平台ReactNative框架原理篇：框架概述.md)
-- [Android平台ReactNative框架原理篇：代码调用](https://github.com/guoxiaoxing/vinci/blob/master/doc/原理篇/02Android平台ReactNative框架原理篇：代码调用.md)
-- [Android平台ReactNative框架原理篇：启动流程](https://github.com/guoxiaoxing/vinci/blob/master/doc/原理篇/03Android平台ReactNative框架原理篇：启动流程.md)
-- [Android平台ReactNative框架原理篇：渲染原理](https://github.com/guoxiaoxing/vinci/blob/master/doc/原理篇/04Android平台ReactNative框架原理篇：渲染原理.md)
-- [Android平台ReactNative框架原理篇：线程模型](https://github.com/guoxiaoxing/vinci/blob/master/doc/原理篇/05Android平台ReactNative框架原理篇：线程模型.md)
-- [Android平台ReactNative框架原理篇：通信机制](https://github.com/guoxiaoxing/vinci/blob/master/doc/原理篇/06Android平台ReactNative框架原理篇：通信机制.md)
-
 ## 一 执行器的实现
 
 在C++层的Executor.h文件中同一定义了执行Native代码的抽象类ExecutorDelegate，以及执行JS代码的抽象类JSExecutor。

@@ -6,13 +6,6 @@
 
 更多文章：https://github.com/guoxiaoxing/vinci
 
-- [Android平台ReactNative框架原理篇：框架概述](https://github.com/guoxiaoxing/vinci/blob/master/doc/原理篇/01Android平台ReactNative框架原理篇：框架概述.md)
-- [Android平台ReactNative框架原理篇：代码调用](https://github.com/guoxiaoxing/vinci/blob/master/doc/原理篇/02Android平台ReactNative框架原理篇：代码调用.md)
-- [Android平台ReactNative框架原理篇：启动流程](https://github.com/guoxiaoxing/vinci/blob/master/doc/原理篇/03Android平台ReactNative框架原理篇：启动流程.md)
-- [Android平台ReactNative框架原理篇：渲染原理](https://github.com/guoxiaoxing/vinci/blob/master/doc/原理篇/04Android平台ReactNative框架原理篇：渲染原理.md)
-- [Android平台ReactNative框架原理篇：线程模型](https://github.com/guoxiaoxing/vinci/blob/master/doc/原理篇/05Android平台ReactNative框架原理篇：线程模型.md)
-- [Android平台ReactNative框架原理篇：通信机制](https://github.com/guoxiaoxing/vinci/blob/master/doc/原理篇/06Android平台ReactNative框架原理篇：通信机制.md)
-        						
 >通信，指的是RN中Java与JS的通信，即JS中的JSX代码如何转化成Java层真实的View与事件的，以及JavaFile层又是如何调用JS来找出它需要的View与
 事件的。
 
