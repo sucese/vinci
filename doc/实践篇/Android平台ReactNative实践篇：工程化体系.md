@@ -1,4 +1,4 @@
-# Android平台ReactNativeshi篇：启动流程
+# Android平台ReactNative实践篇：工程化体系
 
 **关于作者**
 

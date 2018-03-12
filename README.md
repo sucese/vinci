@@ -1,4 +1,4 @@
-# <img src="https://github.com/guoxiaoxing/vinci/raw/master/art/logo.png" alt="Android open source project analysis" width="80" height="80" align="bottom"/> Vinci
+# <img src="https://github.com/guoxiaoxing/vinci/raw/master/art/logo.png" alt="Vinci" width="80" height="80" align="bottom"/> Vinci
 
 ## 功能介绍
 
